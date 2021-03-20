@@ -9,4 +9,9 @@ class Board extends Model
 {
     use HasFactory;
     protected $table = 'boards';
+    protected $guarded = array('id');
+
+    public function user() {
+        return $this->belongsTo('App\Models\User');
+    }
 }
