@@ -39,14 +39,11 @@ class BoardController extends Controller
      */
     public function store(Request $request)
     {
-        // $board = new Board;
-        // $form = $request->all;
-        // unset($form['_token']);
-        // $board->fill($form)->save();
-        // return redirect('board.index');
-
-        $inputs = $request->all();
-        Board::create($inputs);
+        $board = new Board;
+        $board->title = $request->title;
+        $board->content = $request->content;
+        $board->user_id = $request->user_id;
+        $board->save();
         return redirect('/board');
     }
 

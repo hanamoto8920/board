@@ -6,12 +6,14 @@
   <tr>
     <td>ID</td>
     <td>ユーザーID</td>
+    <td>ユーザーネーム</td>
     <td>タイトル</td>
     <td>内容</td>
   </tr>
   <tr>
     <td>{{ $board->id }}</td>
     <td>{{ $board->user_id }}</td>
+    <td>{{ $board-> }}</td>
     <td>{{ $board->title}}</td>
     <td>{{ $board->content}}</td>
   </tr>

@@ -16,7 +16,7 @@
     <textarea type="text" name="content" class="form-control" rows="6" placeholder="※30文字以内"></textarea>
   </div>
   <div>
-  <input type="int" name="user_id" >
+  <input type="hidden" name="user_id" value="{{ $user->id }}">
   </div>
   <br>
   <div>
